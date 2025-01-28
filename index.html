@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON 格式化工具</title>
+    <meta name="description" content="在线 JSON 格式化工具 - 轻松格式化、验证和美化您的 JSON 数据，支持语法高亮显示和类型提示">
+    <meta name="keywords" content="JSON格式化,JSON校验,JSON美化,JSON解析,JSON工具,在线工具">
+    <meta name="author" content="您的名字">
+    <meta property="og:title" content="JSON 格式化工具 - 在线 JSON 美化器">
+    <meta property="og:description" content="在线 JSON 格式化工具 - 轻松格式化、验证和美化您的 JSON 数据，支持语法高亮显示和类型提示">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="您的网站URL">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>JSON 格式化工具 - 在线 JSON 美化器 | 支持语法高亮</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <h1>JSON 格式化工具</h1>
+        <p class="tool-description">
+            专业的在线 JSON 格式化工具，支持语法高亮、JSON 校验、格式化和压缩，让您的 JSON 数据更易读、更规范。
+        </p>
+    </header>
+
+    <main class="container">
         <div class="editor-container">
             <div class="editor-panel">
-                <textarea id="jsonInput" placeholder="请输入 JSON 数据..."></textarea>
+                <label for="jsonInput" class="sr-only">JSON 输入区域</label>
+                <textarea id="jsonInput" placeholder="请输入 JSON 数据..." aria-label="JSON 输入框"></textarea>
             </div>
             <div class="editor-panel">
                 <div class="panel-header">
@@ -29,7 +44,15 @@
                 <div id="jsonOutput"></div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <p>使用说明：将 JSON 数据粘贴到左侧输入框，右侧将自动显示格式化结果。支持语法检查和错误提示。</p>
+            <p>© 2024 JSON 格式化工具 - 为开发者提供更好的 JSON 处理体验</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
